@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عزايم هاوس بوت</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>عزايم هاوس بوت⚓</h1>
+  <p>تجربة بحرية فاخرة لا تُنسى</p>
+</header>
+
+<div>
+  <button onclick="showSection('boats')">الهاوس بوت🚤</button>
+  <button onclick="showSection('packages')">بكج🎊</button>
+  <button onclick="showSection('prices')">الأسعار💰</button>
+  <button onclick="showSection('contact')">تواصل📞</button>
+  <button onclick="showSection('location')">موقعنا📍</button>
+</div>
+
+<!-- سكشن الهاوس بوت -->
+<div id="boats" class="section">
+  <div class="cards">
+
+    <div class="card">
+      <div class="slider">
+        <img src="images2/H10.jpg" class="active">
+        <img src="images2/H9.jpg">
+        <img src="images2/H8.jpg">
+        <img src="images2/H6.jpg">
+        <img src="images2/H5.jpg">
+        <img src="images2/H4.jpg">
+        <img src="images2/H2.jpg">
+        <img src="images2/H3.jpg">
+        <div class="dots"></div>
+      </div>
+      <h3>تصميم داخلي فاخر</h3>
+    </div>
+
+    <div class="card">
+      <div class="slider">
+        <img src="images2/S1.jpg" class="active">
+        <img src="images2/S2.jpg">
+        <img src="images2/S3.jpg">
+        <img src="images2/S4.jpg">
+        <div class="dots"></div>
+      </div>
+      <h3>جلسات خارجية على البحر</h3>
+    </div>
+
+    <div class="card">
+      <div class="slider">
+        <img src="images2/H1.jpeg" class="active">
+        <img src="images2/H6.jpeg">
+        <img src="images2/H8.jpeg">
+        <img src="images2/H11.jpeg">
+        <img src="images2/H12.jpeg">
+        <img src="images2/bb.jpeg">
+        <div class="dots"></div>
+      </div>
+      <h3>إطلالة بحرية مميزة</h3>
+    </div>
+
+  </div>
+</div>
+
+<!-- البكجات -->
+<div id="packages" class="section">
+  <div class="cards">
+
+    <div class="card">
+      <div class="slider">
+        <img src="images2/b1.jpeg" class="active">
+        <img src="images2/b2.jpeg">
+        <img src="images2/b3.jpeg">
+        <img src="images2/b5.jpeg">
+        <img src="images2/c1.jpeg">
+        <img src="images2/c2.jpeg">
+        <img src="images2/c3.jpeg">
+        <img src="images2/c4.jpeg">
+        <img src="images2/b7.jpeg">
+        <img src="images2/b8.jpeg">
+        <img src="images2/b9.jpeg">
+        <img src="images2/b10.jpeg">
+        <img src="images2/c5.jpg">
+        <img src="images2/c6.jpg">
+        <div class="dots"></div>
+      </div>
+      <h3>🎂 celebrations and events</h3>
+      <p>احتفال بمناسباتكم المتميزة</p>
+    </div>
+
+    <div class="card">
+      <div class="slider">
+        <img src="images2/a1.jpeg" class="active">
+        <img src="images2/a2.jpeg">
+        <img src="images2/a3.jpeg">
+        <img src="images2/a5.jpeg">
+        <img src="images2/a8.jpeg">
+        <img src="images2/a7.jpeg">
+        <img src="images2/a6.jpeg">
+        <img src="images2/a9.jpeg">
+        <div class="dots"></div>
+      </div>
+      <h3>🌙 Ramadan Breakfast</h3>
+      <p>إفطار رمضاني على البحر بأجواء هادئة</p>
+    </div>
+
+    <div class="card">
+      <div class="slider">
+        <img src="images2/f1.jpg" class="active">
+        <img src="images2/f4.jpg">
+        <img src="images2/f5.jpg">
+        <img src="images2/f6.jpg">
+        <img src="images2/f7.jpg">
+        <img src="images2/f8.jpg">
+        <img src="images2/f9.jpg">
+        <img src="images2/f10.jpg">
+        <img src="images2/f12.jpg">
+        <img src="images2/f11.jpg">
+        <div class="dots"></div>
+      </div>
+      <h3>🥐 Breakfast</h3>
+      <p>إفطار صباحي مميز بأجواء منعشة</p>
+    </div>
+
+    <div class="card">
+      <div class="slider">
+        <img src="images2/m1.jpg" class="active">
+        <img src="images2/m2.jpg">
+        <img src="images2/m3.jpg">
+        <img src="images2/m4.jpg">
+        <div class="dots"></div>
+      </div>
+      <h3>👨‍👩‍👧 Family</h3>
+      <p>جلسة عائلية مريحة وأجواء بحرية</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- الأسعار -->
+<div id="prices" class="section">
+  <div class="cards">
+    <div class="card">
+      <h2>💰 أسعار الهاوس بوت</h2>
+
+      <h3>🚤 مع الإبحار</h3>
+      <p>ساعة واحدة : 650 ريال</p>
+      <p>ساعتان : 1000 ريال</p>
+      <p>3 ساعات : 1300 ريال</p>
+
+      <hr>
+
+      <h3>🌊 بدون إبحار</h3>
+      <p>الساعة : 250 ريال</p>
+
+      <button onclick="bookNow()">احجز الآن🔥</button>
+    </div>
+  </div>
+</div>
+
+<!-- التواصل -->
+<div id="contact" class="section">
+  <div class="card">
+    <h2>تواصل معنا📞</h2>
+
+    <div class="contact">
+      <a href="https://wa.me/966XXXXXXXXXX">واتساب📱</a>
+      <a href="https://www.tiktok.com">تيك توك📧</a>
+      <a href="https://snapchat.com">سناب شات👻</a>
+      <a href="https://www.instagram.com">انستقرام📸</a>
+    </div>
+
+    <button onclick="bookNow()">احجز الآن🔥</button>
+  </div>
+</div>
+
+<!-- الموقع -->
+<div id="location" class="section">
+  <div class="card">
+    <h3>موقع الهاوس بوت📍</h3>
+    <p>اضغط لفتح الموقع في Google Maps</p>
+
+    <a class="map-btn"
+       href="https://maps.app.goo.gl/BjHUJ7RJRhxUg4fG7?g_st=iwb"
+       target="_blank">
+       عرض الموقع
+    </a>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
